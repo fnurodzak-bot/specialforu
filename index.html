@@ -1,0 +1,1917 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Until The Stars Forget To Shine — a cinematic love story."
+    >
+
+    <meta name="theme-color" content="#07111f">
+
+    <title>Until The Stars Forget To Shine</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ==================================================
+         GLOBAL EFFECT LAYERS
+    ================================================== -->
+
+    <div id="site-bg" aria-hidden="true">
+        <div class="stars-layer"></div>
+        <div class="aurora-layer"></div>
+        <div class="grain-layer"></div>
+        <div class="cursor-glow"></div>
+    </div>
+
+    <!-- ==================================================
+         LOADING SCREEN
+    ================================================== -->
+
+    <div id="loader" class="screen-layer">
+
+        <div class="loader-inner">
+
+            <div class="loader-stars">
+                <span>✦</span>
+                <span>✧</span>
+                <span>✦</span>
+            </div>
+
+            <p class="loader-label">
+                OUR STORY
+            </p>
+
+            <h1>
+                Until The Stars
+                <br>
+                Forget To Shine
+            </h1>
+
+            <div class="loader-track">
+                <div id="loader-progress"></div>
+            </div>
+
+            <p id="loader-status">
+                Preparing memories...
+            </p>
+
+        </div>
+
+    </div>
+
+    <!-- ==================================================
+         MUSIC
+    ================================================== -->
+
+    <audio
+        id="background-music"
+        loop
+        preload="metadata"
+    >
+        <source
+            src="assets/music/risk-it-all.mp3"
+            type="audio/mpeg"
+        >
+    </audio>
+
+    <!-- ==================================================
+         OPENING
+    ================================================== -->
+
+    <section id="opening" class="scene scene-opening">
+
+        <div class="opening-backdrop"></div>
+
+        <div class="opening-stars" aria-hidden="true"></div>
+
+        <div class="opening-content">
+
+            <p class="eyebrow">
+                A CINEMATIC LOVE STORY
+            </p>
+
+            <h1 class="opening-title">
+                Until The Stars
+                <span>Forget To Shine</span>
+            </h1>
+
+            <div class="opening-divider">
+                <span></span>
+                <i>✦</i>
+                <span></span>
+            </div>
+
+            <p class="opening-names">
+                Farid <span>♡</span> Citra
+            </p>
+
+            <p class="opening-subtitle">
+                Some moments become memories.
+                <br>
+                Some memories become home.
+            </p>
+
+            <button
+                id="enter-story"
+                class="primary-button"
+                type="button"
+            >
+                <span>Enter Our Story</span>
+                <i>→</i>
+            </button>
+
+        </div>
+
+        <div class="scroll-hint">
+            <span>Scroll to discover</span>
+            <div class="scroll-line"></div>
+        </div>
+
+    </section>
+
+    <!-- ==================================================
+         MAIN EXPERIENCE
+    ================================================== -->
+
+    <main id="main-content">
+
+        <!-- ==================================================
+             NAVIGATION
+        ================================================== -->
+
+        <header id="site-header">
+
+            <nav class="navbar">
+
+                <a
+                    href="#hero"
+                    class="brand"
+                    aria-label="Home"
+                >
+                    <span class="brand-symbol">✦</span>
+                    <span class="brand-text">
+                        Until The Stars
+                    </span>
+                </a>
+
+                <button
+                    id="menu-toggle"
+                    class="menu-toggle"
+                    type="button"
+                    aria-label="Open menu"
+                    aria-expanded="false"
+                >
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <div
+                    id="nav-menu"
+                    class="nav-menu"
+                >
+                    <a href="#timeline">Story</a>
+                    <a href="#gallery">Photos</a>
+                    <a href="#cinema">Videos</a>
+                    <a href="#letter">Letter</a>
+                    <a href="#ending">Ending</a>
+                </div>
+
+                <button
+                    id="music-toggle"
+                    class="music-toggle"
+                    type="button"
+                    aria-label="Play music"
+                >
+                    <span class="music-icon">♪</span>
+                    <span class="music-bars">
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                    </span>
+                </button>
+
+            </nav>
+
+        </header>
+
+        <!-- ==================================================
+             HERO
+        ================================================== -->
+
+        <section id="hero" class="scene">
+
+            <div class="hero-content">
+
+                <div class="hero-copy reveal">
+
+                    <p class="eyebrow">
+                        OUR LITTLE UNIVERSE
+                    </p>
+
+                    <h2 class="hero-title">
+                        Out of all the
+                        <span>stories</span>
+                        in this world...
+                    </h2>
+
+                    <p class="hero-description">
+                        I'm grateful that ours became
+                        the one I get to remember,
+                        replay, and keep forever.
+                    </p>
+
+                    <div class="hero-actions">
+
+                        <button
+                            id="begin-journey"
+                            class="primary-button"
+                            type="button"
+                        >
+                            <span>Begin the Journey</span>
+                            <i>↓</i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <div class="hero-visual reveal">
+
+                    <div class="hero-orbit orbit-one"></div>
+                    <div class="hero-orbit orbit-two"></div>
+
+                    <div class="hero-photo-frame">
+
+                        <div class="hero-photo-glow"></div>
+
+                        <img
+                            src="assets/images/photo1.jpeg"
+                            alt="Our memory"
+                        >
+
+                    </div>
+
+                    <div class="hero-caption">
+                        <span>MEMORY 01</span>
+                        <strong>where it all felt real</strong>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="hero-bottom-meta">
+
+                <div>
+                    <span>18 MAY 2026</span>
+                    <small>FIRST CHAT</small>
+                </div>
+
+                <div>
+                    <span>29 JUN 2026</span>
+                    <small>FIRST MEET</small>
+                </div>
+
+                <div>
+                    <span>∞</span>
+                    <small>STILL WRITING</small>
+                </div>
+
+            </div>
+
+        </section>
+        <!-- ==================================================
+             STORY INTRO
+        ================================================== -->
+
+        <section id="story-intro" class="scene">
+
+            <div class="section-heading reveal">
+
+                <p class="chapter-label">
+                    CHAPTER I
+                </p>
+
+                <h2>
+                    Before we knew
+                    <span>what this would become.</span>
+                </h2>
+
+                <p>
+                    Sometimes the most important
+                    chapters begin with something
+                    incredibly ordinary.
+                </p>
+
+            </div>
+
+            <div class="story-intro-grid">
+
+                <div class="story-copy reveal">
+
+                    <span class="story-number">
+                        01
+                    </span>
+
+                    <h3>
+                        One message.
+                        <br>
+                        One meeting.
+                        <br>
+                        One beginning.
+                    </h3>
+
+                    <p>
+                        From a simple conversation
+                        to moments that slowly became
+                        some of my favorite memories.
+                    </p>
+
+                </div>
+
+                <div class="story-image reveal">
+
+                    <img
+                        src="assets/images/photo2.jpeg"
+                        alt="Our second memory"
+                    >
+
+                    <div class="image-label">
+                        <span>MEMORY 02</span>
+                        <strong>the beginning of us</strong>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ==================================================
+             TIMELINE
+        ================================================== -->
+
+        <section id="timeline" class="scene">
+
+            <div class="section-heading reveal">
+
+                <p class="chapter-label">
+                    CHAPTER II
+                </p>
+
+                <h2>
+                    The moments that
+                    <span>changed everything.</span>
+                </h2>
+
+                <p>
+                    A few dates.
+                    A thousand little feelings.
+                </p>
+
+            </div>
+
+            <div class="timeline">
+
+                <div class="timeline-line">
+                    <span class="timeline-progress"></span>
+                </div>
+
+                <!-- Timeline Item 1 -->
+
+                <article
+                    class="timeline-item timeline-left reveal"
+                >
+
+                    <div class="timeline-marker">
+                        <span>01</span>
+                    </div>
+
+                    <div class="timeline-content">
+
+                        <span class="timeline-date">
+                            18 MAY 2026
+                        </span>
+
+                        <h3>
+                            First Chat
+                        </h3>
+
+                        <p>
+                            It started with a message.
+                            Nothing dramatic.
+                            Nothing complicated.
+                            Just a tiny beginning
+                            that somehow led us here.
+                        </p>
+
+                    </div>
+
+                </article>
+
+                <!-- Timeline Item 2 -->
+
+                <article
+                    class="timeline-item timeline-right reveal"
+                >
+
+                    <div class="timeline-marker">
+                        <span>02</span>
+                    </div>
+
+                    <div class="timeline-content">
+
+                        <span class="timeline-date">
+                            29 JUN 2026
+                        </span>
+
+                        <h3>
+                            First Meet
+                        </h3>
+
+                        <p>
+                            The first time a person
+                            who only existed on a screen
+                            suddenly stood right in front of me.
+                        </p>
+
+                    </div>
+
+                </article>
+
+                <!-- Timeline Item 3 -->
+
+                <article
+                    class="timeline-item timeline-left reveal"
+                >
+
+                    <div class="timeline-marker">
+                        <span>03</span>
+                    </div>
+
+                    <div class="timeline-content">
+
+                        <span class="timeline-date">
+                            OUR PHOTObooth
+                        </span>
+
+                        <h3>
+                            Four Little Frames
+                        </h3>
+
+                        <p>
+                            Four photographs.
+                            Four expressions.
+                            One memory I never want
+                            to forget.
+                        </p>
+
+                    </div>
+
+                </article>
+
+                <!-- Timeline Item 4 -->
+
+                <article
+                    class="timeline-item timeline-right reveal"
+                >
+
+                    <div class="timeline-marker">
+                        <span>04</span>
+                    </div>
+
+                    <div class="timeline-content">
+
+                        <span class="timeline-date">
+                            TODAY
+                        </span>
+
+                        <h3>
+                            Still Writing
+                        </h3>
+
+                        <p>
+                            This isn't the end of the story.
+                            It's just the page we're
+                            currently living.
+                        </p>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+        <!-- ==================================================
+             QUOTE
+        ================================================== -->
+
+        <section id="quote" class="quote-scene">
+
+            <div class="quote-inner reveal">
+
+                <span class="quote-symbol">
+                    “
+                </span>
+
+                <blockquote>
+                    Out of all the people
+                    in this world,
+                    I'm just grateful
+                    our paths crossed.
+                </blockquote>
+
+                <div class="quote-line"></div>
+
+                <p>
+                    — Farid
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- ==================================================
+             PHOTO GALLERY
+        ================================================== -->
+
+        <section id="gallery" class="scene">
+
+            <div class="section-heading reveal">
+
+                <p class="chapter-label">
+                    CHAPTER III
+                </p>
+
+                <h2>
+                    Four frames.
+                    <span>Countless feelings.</span>
+                </h2>
+
+                <p>
+                    Some photographs capture a moment.
+                    These ones captured a feeling.
+                </p>
+
+            </div>
+
+            <div class="photo-gallery">
+
+                <!-- Photo 1 -->
+
+                <article
+                    class="memory-photo photo-one reveal"
+                    data-index="0"
+                >
+
+                    <div class="photo-inner">
+
+                        <img
+                            src="assets/images/photo1.jpeg"
+                            alt="Memory photo 1"
+                            loading="lazy"
+                        >
+
+                        <div class="photo-number">
+                            01
+                        </div>
+
+                        <div class="photo-overlay">
+
+                            <span>
+                                MEMORY 01
+                            </span>
+
+                            <h3>
+                                The smile
+                                I'll always remember.
+                            </h3>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+                <!-- Photo 2 -->
+
+                <article
+                    class="memory-photo photo-two reveal"
+                    data-index="1"
+                >
+
+                    <div class="photo-inner">
+
+                        <img
+                            src="assets/images/photo2.jpeg"
+                            alt="Memory photo 2"
+                            loading="lazy"
+                        >
+
+                        <div class="photo-number">
+                            02
+                        </div>
+
+                        <div class="photo-overlay">
+
+                            <span>
+                                MEMORY 02
+                            </span>
+
+                            <h3>
+                                One ordinary day
+                                made unforgettable.
+                            </h3>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+                <!-- Photo 3 -->
+
+                <article
+                    class="memory-photo photo-three reveal"
+                    data-index="2"
+                >
+
+                    <div class="photo-inner">
+
+                        <img
+                            src="assets/images/photo3.jpeg"
+                            alt="Memory photo 3"
+                            loading="lazy"
+                        >
+
+                        <div class="photo-number">
+                            03
+                        </div>
+
+                        <div class="photo-overlay">
+
+                            <span>
+                                MEMORY 03
+                            </span>
+
+                            <h3>
+                                The little moment
+                                that stayed with me.
+                            </h3>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+                <!-- Photo 4 -->
+
+                <article
+                    class="memory-photo photo-four reveal"
+                    data-index="3"
+                >
+
+                    <div class="photo-inner">
+
+                        <img
+                            src="assets/images/photo4.jpeg"
+                            alt="Memory photo 4"
+                            loading="lazy"
+                        >
+
+                        <div class="photo-number">
+                            04
+                        </div>
+
+                        <div class="photo-overlay">
+
+                            <span>
+                                MEMORY 04
+                            </span>
+
+                            <h3>
+                                My favorite frame
+                                in the whole story.
+                            </h3>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+            <!-- Gallery Lightbox -->
+
+            <div
+                id="gallery-lightbox"
+                class="lightbox"
+                aria-hidden="true"
+            >
+
+                <button
+                    id="lightbox-close"
+                    class="lightbox-close"
+                    type="button"
+                    aria-label="Close photo"
+                >
+                    ×
+                </button>
+
+                <button
+                    id="lightbox-prev"
+                    class="lightbox-arrow lightbox-prev"
+                    type="button"
+                    aria-label="Previous photo"
+                >
+                    ←
+                </button>
+
+                <div class="lightbox-content">
+
+                    <img
+                        id="lightbox-image"
+                        src=""
+                        alt="Expanded memory"
+                    >
+
+                    <div class="lightbox-caption">
+
+                        <span id="lightbox-number">
+                            MEMORY 01
+                        </span>
+
+                        <h3 id="lightbox-title">
+                            Memory
+                        </h3>
+
+                    </div>
+
+                </div>
+
+                <button
+                    id="lightbox-next"
+                    class="lightbox-arrow lightbox-next"
+                    type="button"
+                    aria-label="Next photo"
+                >
+                    →
+                </button>
+
+            </div>
+
+        </section>
+        <!-- ==================================================
+             CINEMA
+        ================================================== -->
+
+        <section id="cinema" class="scene">
+
+            <div class="section-heading reveal">
+
+                <p class="chapter-label">
+                    CHAPTER IV
+                </p>
+
+                <h2>
+                    Our memories,
+                    <span>in motion.</span>
+                </h2>
+
+                <p>
+                    Some moments are too alive
+                    to exist only inside a photograph.
+                </p>
+
+            </div>
+
+            <div class="cinema-intro reveal">
+
+                <div class="cinema-screen-decoration">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <p>
+                    PRESS PLAY
+                </p>
+
+            </div>
+
+            <div class="movie-grid">
+
+                <!-- Video 1 -->
+
+                <article
+                    class="movie-card reveal"
+                    data-video-index="0"
+                >
+
+                    <div class="movie-media">
+
+                        <video
+                            class="memory-video"
+                            preload="metadata"
+                            playsinline
+                            controls
+                            poster="assets/images/photo1.jpeg"
+                        >
+                            <source
+                                src="assets/videos/video1.mp4"
+                                type="video/mp4"
+                            >
+                        </video>
+
+                        <button
+                            class="video-play-button"
+                            type="button"
+                            aria-label="Play video 1"
+                        >
+                            <span>▶</span>
+                        </button>
+
+                        <div class="movie-duration">
+                            MEMORY 01
+                        </div>
+
+                    </div>
+
+                    <div class="movie-details">
+
+                        <span class="movie-label">
+                            EPISODE 01
+                        </span>
+
+                        <h3>
+                            The Beginning
+                        </h3>
+
+                        <p>
+                            One little moment that
+                            deserves to be remembered.
+                        </p>
+
+                    </div>
+
+                </article>
+
+                <!-- Video 2 -->
+
+                <article
+                    class="movie-card reveal"
+                    data-video-index="1"
+                >
+
+                    <div class="movie-media">
+
+                        <video
+                            class="memory-video"
+                            preload="metadata"
+                            playsinline
+                            controls
+                            poster="assets/images/photo2.jpeg"
+                        >
+                            <source
+                                src="assets/videos/video2.mp4"
+                                type="video/mp4"
+                            >
+                        </video>
+
+                        <button
+                            class="video-play-button"
+                            type="button"
+                            aria-label="Play video 2"
+                        >
+                            <span>▶</span>
+                        </button>
+
+                        <div class="movie-duration">
+                            MEMORY 02
+                        </div>
+
+                    </div>
+
+                    <div class="movie-details">
+
+                        <span class="movie-label">
+                            EPISODE 02
+                        </span>
+
+                        <h3>
+                            Little Things
+                        </h3>
+
+                        <p>
+                            The little moments that
+                            somehow mean the most.
+                        </p>
+
+                    </div>
+
+                </article>
+
+                <!-- Video 3 -->
+
+                <article
+                    class="movie-card reveal"
+                    data-video-index="2"
+                >
+
+                    <div class="movie-media">
+
+                        <video
+                            class="memory-video"
+                            preload="metadata"
+                            playsinline
+                            controls
+                            poster="assets/images/photo3.jpeg"
+                        >
+                            <source
+                                src="assets/videos/video3.mp4"
+                                type="video/mp4"
+                            >
+                        </video>
+
+                        <button
+                            class="video-play-button"
+                            type="button"
+                            aria-label="Play video 3"
+                        >
+                            <span>▶</span>
+                        </button>
+
+                        <div class="movie-duration">
+                            MEMORY 03
+                        </div>
+
+                    </div>
+
+                    <div class="movie-details">
+
+                        <span class="movie-label">
+                            EPISODE 03
+                        </span>
+
+                        <h3>
+                            Beautiful Days
+                        </h3>
+
+                        <p>
+                            A few seconds of video,
+                            a lifetime of memories.
+                        </p>
+
+                    </div>
+
+                </article>
+
+                <!-- Video 4 -->
+
+                <article
+                    class="movie-card reveal"
+                    data-video-index="3"
+                >
+
+                    <div class="movie-media">
+
+                        <video
+                            class="memory-video"
+                            preload="metadata"
+                            playsinline
+                            controls
+                            poster="assets/images/photo4.jpeg"
+                        >
+                            <source
+                                src="assets/videos/video4.mp4"
+                                type="video/mp4"
+                            >
+                        </video>
+
+                        <button
+                            class="video-play-button"
+                            type="button"
+                            aria-label="Play video 4"
+                        >
+                            <span>▶</span>
+                        </button>
+
+                        <div class="movie-duration">
+                            MEMORY 04
+                        </div>
+
+                    </div>
+
+                    <div class="movie-details">
+
+                        <span class="movie-label">
+                            EPISODE 04
+                        </span>
+
+                        <h3>
+                            Still My Favorite
+                        </h3>
+
+                        <p>
+                            If I could replay one thing,
+                            it would be all of this.
+                        </p>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+        <!-- ==================================================
+             MUSIC
+        ================================================== -->
+
+        <section id="music-scene" class="scene">
+
+            <div class="music-scene-inner reveal">
+
+                <div class="music-disc">
+
+                    <div class="disc-ring ring-one"></div>
+                    <div class="disc-ring ring-two"></div>
+
+                    <div class="disc-center">
+
+                        <span>
+                            ♪
+                        </span>
+
+                    </div>
+
+                </div>
+
+                <div class="music-copy">
+
+                    <p class="chapter-label">
+                        CHAPTER V
+                    </p>
+
+                    <h2>
+                        One song.
+                        <span>
+                            A thousand feelings.
+                        </span>
+                    </h2>
+
+                    <p>
+                        Some songs are just songs.
+                        This one somehow became
+                        part of our story.
+                    </p>
+
+                    <div class="track-card">
+
+                        <div class="track-info">
+
+                            <span class="track-name">
+                                Risk It All
+                            </span>
+
+                            <span class="track-artist">
+                                Bruno Mars
+                            </span>
+
+                        </div>
+
+                        <button
+                            id="scene-music-toggle"
+                            class="track-button"
+                            type="button"
+                            aria-label="Play Risk It All"
+                        >
+                            ▶
+                        </button>
+
+                    </div>
+
+                    <div class="music-progress">
+
+                        <div
+                            id="music-progress-fill"
+                        ></div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ==================================================
+             LOVE NOTES
+        ================================================== -->
+
+        <section id="notes" class="scene">
+
+            <div class="section-heading reveal">
+
+                <p class="chapter-label">
+                    CHAPTER VI
+                </p>
+
+                <h2>
+                    The tiny things
+                    <span>I never want to forget.</span>
+                </h2>
+
+                <p>
+                    Maybe they're little.
+                    But they're never insignificant.
+                </p>
+
+            </div>
+
+            <div class="notes-grid">
+
+                <button
+                    class="love-note note-one reveal"
+                    type="button"
+                >
+                    <span class="note-number">
+                        01
+                    </span>
+
+                    <strong>
+                        Your smile
+                    </strong>
+
+                    <small>
+                        It changes the entire mood
+                        of my day.
+                    </small>
+                </button>
+
+                <button
+                    class="love-note note-two reveal"
+                    type="button"
+                >
+                    <span class="note-number">
+                        02
+                    </span>
+
+                    <strong>
+                        Your laugh
+                    </strong>
+
+                    <small>
+                        Somehow it's one of my
+                        favorite sounds.
+                    </small>
+                </button>
+
+                <button
+                    class="love-note note-three reveal"
+                    type="button"
+                >
+                    <span class="note-number">
+                        03
+                    </span>
+
+                    <strong>
+                        Our conversations
+                    </strong>
+
+                    <small>
+                        Even ordinary talks feel
+                        different with you.
+                    </small>
+                </button>
+
+                <button
+                    class="love-note note-four reveal"
+                    type="button"
+                >
+                    <span class="note-number">
+                        04
+                    </span>
+
+                    <strong>
+                        The little details
+                    </strong>
+
+                    <small>
+                        The things you probably don't
+                        realize I remember.
+                    </small>
+                </button>
+
+                <button
+                    class="love-note note-five reveal"
+                    type="button"
+                >
+                    <span class="note-number">
+                        05
+                    </span>
+
+                    <strong>
+                        The way you care
+                    </strong>
+
+                    <small>
+                        Quietly. Naturally.
+                        And somehow beautifully.
+                    </small>
+                </button>
+
+                <button
+                    class="love-note note-six reveal"
+                    type="button"
+                >
+                    <span class="note-number">
+                        06
+                    </span>
+
+                    <strong>
+                        Just you
+                    </strong>
+
+                    <small>
+                        No grand reason.
+                        I just really like having you here.
+                    </small>
+                </button>
+
+            </div>
+
+            <div
+                id="note-modal"
+                class="note-modal"
+                aria-hidden="true"
+            >
+
+                <div class="note-modal-card">
+
+                    <button
+                        id="note-modal-close"
+                        type="button"
+                        aria-label="Close note"
+                    >
+                        ×
+                    </button>
+
+                    <span id="note-modal-number">
+                        NOTE 01
+                    </span>
+
+                    <h3 id="note-modal-title">
+                        Your smile
+                    </h3>
+
+                    <p id="note-modal-text">
+                        It changes the entire mood
+                        of my day.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ==================================================
+             LETTER
+        ================================================== -->
+
+        <section id="letter" class="scene">
+
+            <div class="section-heading reveal">
+
+                <p class="chapter-label">
+                    CHAPTER VII
+                </p>
+
+                <h2>
+                    A few words
+                    <span>I wanted you to keep.</span>
+                </h2>
+
+                <p>
+                    Open this when you need a reminder
+                    of how special you are.
+                </p>
+
+            </div>
+
+            <div class="letter-scene reveal">
+
+                <button
+                    id="envelope"
+                    class="envelope"
+                    type="button"
+                    aria-label="Open the letter"
+                >
+
+                    <div class="envelope-back"></div>
+
+                    <div class="envelope-paper">
+                        <span>
+                            For Citra,
+                        </span>
+                    </div>
+
+                    <div class="envelope-flap"></div>
+
+                    <div class="envelope-seal">
+                        ♡
+                    </div>
+
+                </button>
+
+                <div
+                    id="letter-paper"
+                    class="letter-paper"
+                    aria-hidden="true"
+                >
+
+                    <div class="letter-header">
+
+                        <span>
+                            A LETTER FROM FARID
+                        </span>
+
+                        <time>
+                            2026
+                        </time>
+
+                    </div>
+
+                    <div class="letter-body">
+
+                        <h3>
+                            Dear Citra,
+                        </h3>
+
+                        <p>
+                            Makasih udah hadir dan jadi bagian dari cerita ini.
+                           
+                        </p>
+
+                        <p>
+                            Mungkin kata-kata di sini
+                            gabakal pernah cukup
+                            buat jelasin semuanya.
+                            Tapi kalau ada satu hal
+                            yang mau aku pastiin,
+                            itu adalah:
+                            aku bener-bener bersyukur
+                            pernah menemukan kamu.
+                        </p>
+
+                        <p>
+                            Makasih ya buat semua
+                            tawa, setiap cerita,
+                            setiap momen kecil,
+                            dan setiap kenangan
+                            yang akhirnya menjadi
+                            sesuatu yang begitu berarti.
+                        </p>
+
+                        <p>
+                            Kalo suatu hari nanti
+                            kita membuka halaman ini lagi,
+                            semoga kita masih bisa
+                            tersenyum melihat semua
+                            yang pernah kita lewati.
+                        </p>
+
+                        <p>
+                            Dan kalo aku diberi
+                            kesempatan buat milih
+                            sekali lagi...
+                        </p>
+
+                        <p class="letter-emphasis">
+                            Aku bakal tetap milih kamu.
+                        </p>
+
+                        <div class="letter-signature">
+                            <span>
+                                With love,
+                            </span>
+
+                            <strong>
+                                Farid
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+        <!-- ==================================================
+             MEMORY VAULT
+        ================================================== -->
+
+        <section id="memory-vault" class="scene">
+
+            <div class="section-heading reveal">
+
+                <p class="chapter-label">
+                    CHAPTER VIII
+                </p>
+
+                <h2>
+                    Some memories
+                    <span>deserve their own room.</span>
+                </h2>
+
+                <p>
+                    A little place for the moments
+                    we never want to lose.
+                </p>
+
+            </div>
+
+            <div class="vault-container reveal">
+
+                <button
+                    id="vault-open"
+                    class="vault-door"
+                    type="button"
+                    aria-expanded="false"
+                >
+
+                    <div class="vault-handle">
+
+                        <span></span>
+                        <span></span>
+                        <span></span>
+
+                    </div>
+
+                    <div class="vault-lock">
+                        ♢
+                    </div>
+
+                    <span class="vault-label">
+                        OPEN MEMORY VAULT
+                    </span>
+
+                    <small>
+                        Enter our little archive
+                    </small>
+
+                </button>
+
+                <div
+                    id="vault-content"
+                    class="vault-content"
+                    aria-hidden="true"
+                >
+
+                    <div class="vault-header">
+
+                        <span>
+                            MEMORY ARCHIVE
+                        </span>
+
+                        <button
+                            id="vault-close"
+                            type="button"
+                            aria-label="Close memory vault"
+                        >
+                            ×
+                        </button>
+
+                    </div>
+
+                    <div class="vault-grid">
+
+                        <button
+                            class="vault-memory"
+                            data-vault-type="photo"
+                            data-vault-index="0"
+                            type="button"
+                        >
+
+                            <img
+                                src="assets/images/photo1.jpg"
+                                alt="Archived memory 1"
+                                loading="lazy"
+                            >
+
+                            <span>
+                                MEMORY 01
+                            </span>
+
+                        </button>
+
+                        <button
+                            class="vault-memory"
+                            data-vault-type="photo"
+                            data-vault-index="1"
+                            type="button"
+                        >
+
+                            <img
+                                src="assets/images/photo2.jpg"
+                                alt="Archived memory 2"
+                                loading="lazy"
+                            >
+
+                            <span>
+                                MEMORY 02
+                            </span>
+
+                        </button>
+
+                        <button
+                            class="vault-memory"
+                            data-vault-type="photo"
+                            data-vault-index="2"
+                            type="button"
+                        >
+
+                            <img
+                                src="assets/images/photo3.jpg"
+                                alt="Archived memory 3"
+                                loading="lazy"
+                            >
+
+                            <span>
+                                MEMORY 03
+                            </span>
+
+                        </button>
+
+                        <button
+                            class="vault-memory"
+                            data-vault-type="photo"
+                            data-vault-index="3"
+                            type="button"
+                        >
+
+                            <img
+                                src="assets/images/photo4.jpg"
+                                alt="Archived memory 4"
+                                loading="lazy"
+                            >
+
+                            <span>
+                                MEMORY 04
+                            </span>
+
+                        </button>
+
+                    </div>
+
+                    <div class="vault-message">
+
+                        <span>
+                            ARCHIVE NOTE
+                        </span>
+
+                        <p>
+                            Some days pass.
+                            Some memories stay.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ==================================================
+             LOVE COUNTER
+        ================================================== -->
+
+        <section id="counter" class="scene">
+
+            <div class="counter-inner reveal">
+
+                <p class="chapter-label">
+                    CHAPTER IX
+                </p>
+
+                <h2>
+                    And the story
+                    <span>keeps going.</span>
+                </h2>
+
+                <div class="counter-value">
+
+                    <strong id="love-days">
+                        0
+                    </strong>
+
+                    <span>
+                        days
+                    </span>
+
+                </div>
+
+                <p class="counter-caption">
+                    since the beginning of this chapter
+                </p>
+
+                <div class="counter-date">
+
+                    29 JUN 2026
+
+                    <span>→</span>
+
+                    FOREVER
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ==================================================
+             FINAL MESSAGE
+        ================================================== -->
+
+        <section id="ending" class="scene">
+
+            <div class="ending-stars" aria-hidden="true"></div>
+
+            <div class="ending-content reveal">
+
+                <p class="chapter-label">
+                    THE FINAL CHAPTER
+                </p>
+
+                <h2 class="ending-title">
+
+                    Every love story
+                    <span>is beautiful.</span>
+
+                </h2>
+
+                <div class="ending-divider">
+
+                    <span></span>
+                    <i>✦</i>
+                    <span></span>
+
+                </div>
+
+                <p class="ending-message">
+
+                    But somehow,
+                    <br>
+                    ours will always be
+                    <strong>my favorite.</strong>
+
+                </p>
+
+                <p class="ending-small">
+
+                    Thank you for every smile,
+                    every laugh,
+                    every conversation,
+                    and every memory.
+
+                </p>
+
+                <div class="ending-signature">
+
+
+                    <span>♡</span>
+
+                    Citra
+
+                </div>
+
+                <button
+                    id="restart-story"
+                    class="primary-button"
+                    type="button"
+                >
+                    <span>Replay Our Story</span>
+                    <i>↻</i>
+                </button>
+
+            </div>
+
+        </section>
+
+        <!-- ==================================================
+             CREDITS
+        ================================================== -->
+
+        <section id="credits" class="credits-scene">
+
+            <div class="credits-inner">
+
+                <p class="credits-kicker">
+                    UNTIL THE STARS FORGET TO SHINE
+                </p>
+
+                <h2>
+                    A little universe
+                    <br>
+                    made for two.
+                </h2>
+
+                <div class="credits-divider"></div>
+
+                <div class="credits-list">
+
+                    <div>
+                        <span>
+                            Written for
+                        </span>
+
+                        <strong>
+                            Citra
+                        </strong>
+                    </div>
+
+                    <div>
+                        <span>
+                            Made with
+                        </span>
+
+                        <strong>
+                            Love
+                        </strong>
+                    </div>
+
+                    <div>
+                        <span>
+                            By
+                        </span>
+
+                        <strong>
+                            Farid
+                        </strong>
+                    </div>
+
+                </div>
+
+                <p class="credits-final">
+                    Some memories fade.
+                    <br>
+                    Some people never do.
+                </p>
+
+                <span class="credits-heart">
+                    ♡
+                </span>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- ==================================================
+         GLOBAL IMAGE LIGHTBOX
+    ================================================== -->
+
+    <div
+        id="global-lightbox"
+        class="global-lightbox"
+        aria-hidden="true"
+    >
+
+        <button
+            id="global-lightbox-close"
+            type="button"
+            aria-label="Close"
+        >
+            ×
+        </button>
+
+        <button
+            id="global-lightbox-prev"
+            type="button"
+            aria-label="Previous"
+        >
+            ←
+        </button>
+
+        <div class="global-lightbox-content">
+
+            <img
+                id="global-lightbox-image"
+                src=""
+                alt=""
+            >
+
+            <div class="global-lightbox-meta">
+
+                <span id="global-lightbox-label">
+                    MEMORY
+                </span>
+
+                <h3 id="global-lightbox-title">
+                    Our Memory
+                </h3>
+
+            </div>
+
+        </div>
+
+        <button
+            id="global-lightbox-next"
+            type="button"
+            aria-label="Next"
+        >
+            →
+        </button>
+
+    </div>
+
+    <!-- ==================================================
+         TOAST
+    ================================================== -->
+
+    <div
+        id="toast"
+        class="toast"
+        aria-live="polite"
+    ></div>
+
+    <!-- ==================================================
+         FOOTER
+    ================================================== -->
+
+    <footer id="footer">
+
+        <div class="footer-inner">
+
+            <div class="footer-brand">
+
+                <span class="brand-symbol">
+                    ✦
+                </span>
+
+                <h2>
+                    Until The Stars
+                    <br>
+                    Forget To Shine
+                </h2>
+
+            </div>
+
+            <div class="footer-meta">
+
+                <span>
+                    FARID × CITRA
+                </span>
+
+                <span>
+                    2026
+                </span>
+
+            </div>
+
+            <p>
+                Made with love,
+                one memory at a time.
+            </p>
+
+        </div>
+
+    </footer>
+
+    <!-- ==================================================
+         JAVASCRIPT
+    ================================================== -->
+
+    <script src="script.js"></script>
+
+</body>
+</html>
